@@ -29,7 +29,7 @@ class Comment(models.Model):
         verbose_name='Дата добавления'
     )
     post = models.ForeignKey(
-        Post,
+        'Post',
         on_delete=models.CASCADE,
         related_name='comments'
     )
